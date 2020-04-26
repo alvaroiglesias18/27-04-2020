@@ -1,0 +1,155 @@
+Start-Process chrome "https://twitter.com/home"
+
+Start-Sleep -Seconds 7
+
+$MouseEventSig=@'
+[DllImport("user32.dll",CharSet=CharSet.Auto, CallingConvention=CallingConvention.StdCall)]
+public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
+'@
+ 
+$MouseEvent = Add-Type -memberDefinition $MouseEventSig -name "MouseEventWinApi" -passThru
+
+[System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(400,162)
+$MouseEvent::mouse_event(0x00000002, 0, 0, 0, 0)
+$MouseEvent::mouse_event(0x00000004, 0, 0, 0, 0)
+
+Start-Sleep -Seconds 2
+[System.Windows.Forms.SendKeys]::SendWait("Jesús apruebame con un 10")
+
+
+Start-Sleep -Seconds 2
+
+$MouseEventSig=@'
+[DllImport("user32.dll",CharSet=CharSet.Auto, CallingConvention=CallingConvention.StdCall)]
+public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
+'@
+ 
+$MouseEvent = Add-Type -memberDefinition $MouseEventSig -name "MouseEventWinApi" -passThru
+
+[System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(862,216)
+$MouseEvent::mouse_event(0x00000002, 0, 0, 0, 0)
+$MouseEvent::mouse_event(0x00000004, 0, 0, 0, 0)
+
+Start-Sleep -Seconds 2
+
+$MouseEventSig=@'
+[DllImport("user32.dll",CharSet=CharSet.Auto, CallingConvention=CallingConvention.StdCall)]
+public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
+'@
+ 
+$MouseEvent = Add-Type -memberDefinition $MouseEventSig -name "MouseEventWinApi" -passThru
+
+[System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(400,162)
+$MouseEvent::mouse_event(0x00000002, 0, 0, 0, 0)
+$MouseEvent::mouse_event(0x00000004, 0, 0, 0, 0)
+
+Start-Sleep -Seconds 2
+[System.Windows.Forms.SendKeys]::SendWait("Por favor ")
+
+Start-Sleep -Seconds 2
+
+$MouseEventSig=@'
+[DllImport("user32.dll",CharSet=CharSet.Auto, CallingConvention=CallingConvention.StdCall)]
+public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
+'@
+ 
+$MouseEvent = Add-Type -memberDefinition $MouseEventSig -name "MouseEventWinApi" -passThru
+
+[System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(518,215)
+$MouseEvent::mouse_event(0x00000002, 0, 0, 0, 0)
+$MouseEvent::mouse_event(0x00000004, 0, 0, 0, 0)
+
+Start-Sleep -Seconds 2
+
+$MouseEventSig=@'
+[DllImport("user32.dll",CharSet=CharSet.Auto, CallingConvention=CallingConvention.StdCall)]
+public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
+'@
+ 
+$MouseEvent = Add-Type -memberDefinition $MouseEventSig -name "MouseEventWinApi" -passThru
+
+[System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(419,263)
+$MouseEvent::mouse_event(0x00000002, 0, 0, 0, 0)
+$MouseEvent::mouse_event(0x00000004, 0, 0, 0, 0)
+
+Start-Sleep -Seconds 1
+[System.Windows.Forms.SendKeys]::SendWait("sad")
+
+Start-Sleep -Seconds 2
+
+$MouseEventSig=@'
+[DllImport("user32.dll",CharSet=CharSet.Auto, CallingConvention=CallingConvention.StdCall)]
+public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
+'@
+ 
+$MouseEvent = Add-Type -memberDefinition $MouseEventSig -name "MouseEventWinApi" -passThru
+
+[System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(480,390)
+$MouseEvent::mouse_event(0x00000002, 0, 0, 0, 0)
+$MouseEvent::mouse_event(0x00000004, 0, 0, 0, 0)
+
+
+Start-Sleep -Seconds 2
+
+$MouseEventSig=@'
+[DllImport("user32.dll",CharSet=CharSet.Auto, CallingConvention=CallingConvention.StdCall)]
+public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
+'@
+ 
+$MouseEvent = Add-Type -memberDefinition $MouseEventSig -name "MouseEventWinApi" -passThru
+
+[System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(862,216)
+$MouseEvent::mouse_event(0x00000002, 0, 0, 0, 0)
+$MouseEvent::mouse_event(0x00000004, 0, 0, 0, 0)
+
+Start-Sleep -Seconds 2
+
+$MouseEventSig=@'
+[DllImport("user32.dll",CharSet=CharSet.Auto, CallingConvention=CallingConvention.StdCall)]
+public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
+'@
+ 
+$MouseEvent = Add-Type -memberDefinition $MouseEventSig -name "MouseEventWinApi" -passThru
+
+[System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(862,216)
+$MouseEvent::mouse_event(0x00000002, 0, 0, 0, 0)
+$MouseEvent::mouse_event(0x00000004, 0, 0, 0, 0)
+
+Start-Sleep -Seconds 2
+
+
+$contador =0
+while($contador -lt 2){
+
+Start-Sleep -Seconds 2
+
+$MouseEventSig=@'
+[DllImport("user32.dll",CharSet=CharSet.Auto, CallingConvention=CallingConvention.StdCall)]
+public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
+'@
+ 
+$MouseEvent = Add-Type -memberDefinition $MouseEventSig -name "MouseEventWinApi" -passThru
+
+[System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(400,162)
+$MouseEvent::mouse_event(0x00000002, 0, 0, 0, 0)
+$MouseEvent::mouse_event(0x00000004, 0, 0, 0, 0)
+
+Start-Sleep -Seconds 2
+[System.Windows.Forms.SendKeys]::SendWait("Todo gracias a https://www.jesusninoc.com/ tweet ='$contador'")
+
+Start-Sleep -Seconds 1
+
+$MouseEventSig=@'
+[DllImport("user32.dll",CharSet=CharSet.Auto, CallingConvention=CallingConvention.StdCall)]
+public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
+'@
+ 
+$MouseEvent = Add-Type -memberDefinition $MouseEventSig -name "MouseEventWinApi" -passThru
+
+[System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(862,216)
+$MouseEvent::mouse_event(0x00000002, 0, 0, 0, 0)
+$MouseEvent::mouse_event(0x00000004, 0, 0, 0, 0)
+
+$contador++
+
+}
